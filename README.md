@@ -2,7 +2,7 @@
 
 Far from being an Excel worksheet **work-sheet-comp** is a Vue.js web component that can display a large table of data where row index headings freeze as you scroll horizontally or table headings freeze as you scroll vertically.  Also when a table heading is clicked, the entire table is sorted based on the selected column.  Repeated clicks of the column toggle the sort direction between ascending/descending. 
 
- **work-sheet-comp** depends on the [vue.js](https://vuejs.org/ "Vue.js") framework and can be installed via [npm install](https://docs.npmjs.com/cli/install.html "npm install") with the included `package.json` file.  Three [webpack](https://webpack.js.org/concepts/) npm scripts are included for building  development, production, or hot recompile/execute of the demo.   `build-dev` and `build-prod` scripts produce  a `dist` folder containing the `index.html`.  The size of the `main.js` bundle using `build-prod` is 14 KiB along with calling a CDN for incorporating the Vue framework.
+ **work-sheet-comp** can be installed via with the included `package.json` file for a local installation via the [npm install](https://docs.npmjs.com/cli/install.html "npm install") command.  **work-sheet-comp** depends on the [vue.js](https://vuejs.org/ "Vue.js") framework.  A demo folder is provided that used [Parcel](https://parceljs.org/) together with its associated `package.json` file to bundle together  **work-sheet-comp** along with its [vue.js](https://vuejs.org/ "Vue.js") dependency for a simple application.  Further details are provided below for running the demo.
 
 ## Props
 
@@ -57,7 +57,7 @@ The parent component can listen to the above event and provide a callback for fu
 
 One demonstration of **work-sheet-comp**  is provided in the folder named `demo/dist` and can be viewed by hosting the `index.html`file.  The demo (templated in the `App.vue` file) displays 15 random valued parameters with 100 rows.  **work-sheet-comp** can accept numbers, strings, and Dates for data.  In addition, column widths are set.  The parent listens to the cell click event and displays the row/column indexes at console.log.
 
-As a suggestion, install [http-server](https://www.npmjs.com/package/http-server "http-server") globally via [npm](https://www.npmjs.com/ "npm") then enter the command `http-server`in the **work-sheet-comp** `dist` directory.  From a browser enter the url: `localhost:8080/` to view the demo.
+As a suggestion, install [http-server](https://www.npmjs.com/package/http-server "http-server") locally/globally via [npm](https://www.npmjs.com/ "npm") then enter the command `http-server`in the **work-sheet-comp** `dist` directory.  From a browser enter the url: `localhost:8080/` to view the demo.
 
 Here is some example code for using **work-sheet-comp**  taken from the `App.vue` file:
 
