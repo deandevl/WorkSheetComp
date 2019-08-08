@@ -1,0 +1,16 @@
+{
+  "name": "worksheetcomp",
+  "version": "1.0.0",
+  "description": "A Vue.js web component for displaying extensive table data",
+  "main": "WorkSheetComp.vue",
+  "repository": "git+https://github.com/deandevl/WorkSheetComp.git",
+  "keywords": [
+    "Vue.js",
+    "WorkSheetComp"
+  ],
+  "author": "'Rick <deanr3@bardstown.com>",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.5.13"
+  }
+}
